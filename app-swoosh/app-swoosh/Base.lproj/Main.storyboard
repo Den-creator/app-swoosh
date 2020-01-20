@@ -134,6 +134,9 @@
                                                 <state key="normal" title="Mens">
                                                     <color key="titleColor" red="0.89794141049999998" green="0.89809560779999997" blue="0.89793163539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onMensTapped:" destination="k76-Yy-bwi" eventType="touchUpInside" id="cnN-Pa-gLm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr7-0D-rPT" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="56" width="355" height="36"/>
@@ -145,6 +148,9 @@
                                                 <state key="normal" title="Womens">
                                                     <color key="titleColor" red="0.89794141049999998" green="0.89809560779999997" blue="0.89793163539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onWomensTapped:" destination="k76-Yy-bwi" eventType="touchUpInside" id="TA2-mz-Lkr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gje-1k-Gqx" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="112" width="355" height="36"/>
@@ -156,13 +162,16 @@
                                                 <state key="normal" title="Co-ed">
                                                     <color key="titleColor" red="0.89794141049999998" green="0.89809560779999997" blue="0.89793163539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onCoedTapped:" destination="k76-Yy-bwi" eventType="touchUpInside" id="gu1-te-dqj"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iaP-nQ-Vwd">
                                         <rect key="frame" x="0.0" y="571" width="355" height="36"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rep-Id-e4a" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rep-Id-e4a" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="36"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
@@ -201,6 +210,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="eVC-K4-eNV"/>
                     <connections>
+                        <outlet property="nextBtn" destination="Rep-Id-e4a" id="ujT-BC-oi5"/>
                         <segue destination="mBc-bP-2LA" kind="show" identifier="skillVCSegue" id="pRD-qc-Wh3"/>
                     </connections>
                 </viewController>
